@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 namespace BibliotecaScolastica
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Commento da github
     /// </summary>
     public partial class MainWindow : Window
     {
