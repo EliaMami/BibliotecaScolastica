@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BibliotecaScolastica"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="421" Width="698">
     <Grid>
-
+        <Label Content="Titolo:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="121"/>
+        <Label Content="Autore:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="121"/>
+        <Label Content="Editore:" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Width="121"/>
+        <Label Content="Data Pubblicazione:" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" Width="121"/>
+        <Label Content="Numero pagine:" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" Width="121"/>
+        <TextBox x:Name="txt_titolo" HorizontalAlignment="Left" Margin="136,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Height="26"/>
+        <TextBox x:Name="txt_autore" HorizontalAlignment="Left" Margin="136,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Height="26"/>
+        <TextBox x:Name="txt_editore" HorizontalAlignment="Left" Margin="136,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Height="26"/>
+        <TextBox x:Name="txt_dataPubblicazione" HorizontalAlignment="Left" Margin="136,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Height="26"/>
+        <TextBox x:Name="txt_numeroPagine" HorizontalAlignment="Left" Margin="136,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Height="26"/>
+        <Button Content="Aggiungi libro" HorizontalAlignment="Left" Margin="136,176,0,0" VerticalAlignment="Top" Height="42" Width="152"/>
+        <ListBox Margin="339,254,10,0" Height="139" VerticalAlignment="Top"/>
+        <Label Content="Informazioni:" HorizontalAlignment="Left" Margin="339,223,0,0" VerticalAlignment="Top" Width="121"/>
+        <ListBox Margin="339,41,10,0" Height="177" VerticalAlignment="Top"/>
+        <Label Content="ListaLibri:" HorizontalAlignment="Left" Margin="339,10,0,0" VerticalAlignment="Top" Width="121"/>
+        <TextBox x:Name="txt_ricerca" HorizontalAlignment="Left" Margin="136,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Height="26"/>
+        <Label Content="Ricerca:" HorizontalAlignment="Left" Margin="10,254,0,0" VerticalAlignment="Top" Width="121"/>
+        <CheckBox x:Name="cbx_ricercaAutore" Content="Autore" HorizontalAlignment="Left" Margin="136,296,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.577"/>
+        <CheckBox x:Name="txt_ricercaTitolo" Content="Titolo" HorizontalAlignment="Left" Margin="238,296,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn_ricerca" Content="Ricerca" HorizontalAlignment="Left" Margin="136,323,0,0" VerticalAlignment="Top" Width="152"/>
+        <Button x:Name="ctn_tempoLettura" Content="Tempo lettura" HorizontalAlignment="Left" Margin="136,348,0,0" VerticalAlignment="Top" Width="152"/>
+        <Button x:Name="btn_numeroLibri" Content="Numero libri presenti" HorizontalAlignment="Left" Margin="136,373,0,0" VerticalAlignment="Top" Width="152"/>
     </Grid>
 </Window>
