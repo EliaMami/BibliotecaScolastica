@@ -17,17 +17,17 @@
         <TextBox x:Name="txt_editore" HorizontalAlignment="Left" Margin="136,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Height="26"/>
         <TextBox x:Name="txt_dataPubblicazione" HorizontalAlignment="Left" Margin="136,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Height="26"/>
         <TextBox x:Name="txt_numeroPagine" HorizontalAlignment="Left" Margin="136,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Height="26"/>
-        <Button Content="Aggiungi libro" HorizontalAlignment="Left" Margin="136,176,0,0" VerticalAlignment="Top" Height="42" Width="152"/>
-        <ListBox Margin="339,254,10,0" Height="139" VerticalAlignment="Top"/>
+        <Button x:Name="btn_aggiungiLibro" Content="Aggiungi libro" HorizontalAlignment="Left" Margin="136,176,0,0" VerticalAlignment="Top" Height="42" Width="152" Click="btn_aggiungiLibro_Click"/>
+        <ListBox x:Name="lbx_informazioni" Margin="339,254,10,0" Height="139" VerticalAlignment="Top"/>
         <Label Content="Informazioni:" HorizontalAlignment="Left" Margin="339,223,0,0" VerticalAlignment="Top" Width="121"/>
-        <ListBox Margin="339,41,10,0" Height="177" VerticalAlignment="Top"/>
+        <ListBox x:Name="lbx_listaLibri" Margin="339,41,10,0" Height="177" VerticalAlignment="Top" SelectionChanged="lbx_listaLibri_SelectionChanged"/>
         <Label Content="ListaLibri:" HorizontalAlignment="Left" Margin="339,10,0,0" VerticalAlignment="Top" Width="121"/>
         <TextBox x:Name="txt_ricerca" HorizontalAlignment="Left" Margin="136,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Height="26"/>
         <Label Content="Ricerca:" HorizontalAlignment="Left" Margin="10,254,0,0" VerticalAlignment="Top" Width="121"/>
-        <CheckBox x:Name="cbx_ricercaAutore" Content="Autore" HorizontalAlignment="Left" Margin="136,296,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.577"/>
+        <CheckBox x:Name="cbx_ricercaAutore" Content="Autore" HorizontalAlignment="Left" Margin="136,296,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.577" IsChecked="True"/>
         <CheckBox x:Name="txt_ricercaTitolo" Content="Titolo" HorizontalAlignment="Left" Margin="238,296,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btn_ricerca" Content="Ricerca" HorizontalAlignment="Left" Margin="136,323,0,0" VerticalAlignment="Top" Width="152"/>
-        <Button x:Name="ctn_tempoLettura" Content="Tempo lettura" HorizontalAlignment="Left" Margin="136,348,0,0" VerticalAlignment="Top" Width="152"/>
-        <Button x:Name="btn_numeroLibri" Content="Numero libri presenti" HorizontalAlignment="Left" Margin="136,373,0,0" VerticalAlignment="Top" Width="152"/>
+        <Button x:Name="btn_ricerca" Content="Ricerca" HorizontalAlignment="Left" Margin="136,323,0,0" VerticalAlignment="Top" Width="152" Click="btn_ricerca_Click"/>
+        <Button x:Name="btn_tempoLettura" Content="Tempo lettura" HorizontalAlignment="Left" Margin="136,348,0,0" VerticalAlignment="Top" Width="152" Click="btn_tempoLettura_Click"/>
+        <Button x:Name="btn_numeroLibri" Content="Numero libri presenti" HorizontalAlignment="Left" Margin="136,373,0,0" VerticalAlignment="Top" Width="152" Click="btn_numeroLibri_Click"/>
     </Grid>
 </Window>
