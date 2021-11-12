@@ -10,8 +10,8 @@ namespace BibliotecaScolastica
     {
         private string _nome;
         private string _indirizzo;
-        private DateTime _orarioApertura;
-        private DateTime _orarioChiusura;
+        private string _orarioApertura;
+        private string _orarioChiusura;
         private List<Libro> _libri;
 
         public string Nome
@@ -38,11 +38,11 @@ namespace BibliotecaScolastica
                 _indirizzo = value;
             }
         }
-        public DateTime OrarioApertura
+        public string OrarioApertura
         {
             get; set;
         }
-        public DateTime OrarioChiusura
+        public string OrarioChiusura
         {
             get; set;
         }
@@ -51,7 +51,7 @@ namespace BibliotecaScolastica
             get; set;
         }
 
-        public Biblioteca(string nome, string indirizzo, DateTime orarioApertura, DateTime orarioChiusura, List<Libro> libri)
+        public Biblioteca(string nome, string indirizzo, string orarioApertura, string orarioChiusura, List<Libro> libri)
         {
             Nome = nome;
             Indirizzo = indirizzo;
@@ -59,13 +59,13 @@ namespace BibliotecaScolastica
             OrarioChiusura = orarioChiusura;
             Libri = libri;
         }
-        public Biblioteca(string nome, string indirizzo, DateTime orarioApertura, DateTime orarioChiusura)
+        public Biblioteca(string nome, string indirizzo, string orarioApertura, string orarioChiusura)
         {
             Nome = nome;
             Indirizzo = indirizzo;
             OrarioApertura = orarioApertura;
             OrarioChiusura = orarioChiusura;
-            Libri = new List<Libro>();
+            _libri = new List<Libro>();
         }
         public void AddLibro(Libro l)
         {
@@ -73,22 +73,22 @@ namespace BibliotecaScolastica
         }
         public string RicercaLibro(string titoloRicercato)
         {
-            Libro lRicercato;
+            Libro lRicercato = new Libro("", "", 0 , "", 0);
             foreach(Libro l in Libri)
             {
-                if(l.Titolo = titoloRicercato)
+                if(l.Titolo == titoloRicercato)
                 {
                     lRicercato = l;
                 }
             }
-            return lRicercato.ToString;
+            return lRicercato.ToString();
         }
         public List<Libro> RicercaLibriConAutore(string autoreRicercato)
         {
             List<Libro> lRicercati = new List<Libro>();
             foreach (Libro l in Libri)
             {
-                if (l.Autore = autoreRicercato)
+                if (l.Autore == autoreRicercato)
                 {
                     lRicercati.Add(l);
                 }

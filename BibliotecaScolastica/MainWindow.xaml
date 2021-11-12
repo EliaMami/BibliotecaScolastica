@@ -25,7 +25,7 @@
         <TextBox x:Name="txt_ricerca" HorizontalAlignment="Left" Margin="136,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Height="26"/>
         <Label Content="Ricerca:" HorizontalAlignment="Left" Margin="10,254,0,0" VerticalAlignment="Top" Width="121"/>
         <CheckBox x:Name="cbx_ricercaAutore" Content="Autore" HorizontalAlignment="Left" Margin="136,296,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.577" IsChecked="True"/>
-        <CheckBox x:Name="txt_ricercaTitolo" Content="Titolo" HorizontalAlignment="Left" Margin="238,296,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cbx_ricercaTitolo" Content="Titolo" HorizontalAlignment="Left" Margin="238,296,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btn_ricerca" Content="Ricerca" HorizontalAlignment="Left" Margin="136,323,0,0" VerticalAlignment="Top" Width="152" Click="btn_ricerca_Click"/>
         <Button x:Name="btn_tempoLettura" Content="Tempo lettura" HorizontalAlignment="Left" Margin="136,348,0,0" VerticalAlignment="Top" Width="152" Click="btn_tempoLettura_Click"/>
         <Button x:Name="btn_numeroLibri" Content="Numero libri presenti" HorizontalAlignment="Left" Margin="136,373,0,0" VerticalAlignment="Top" Width="152" Click="btn_numeroLibri_Click"/>

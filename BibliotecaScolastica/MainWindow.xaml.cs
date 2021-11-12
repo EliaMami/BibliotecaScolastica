@@ -25,13 +25,13 @@ namespace BibliotecaScolastica
         {
             InitializeComponent();
             biblioteca = new Biblioteca("Mondadori", "Via romagna, 22", "13:00", "20:00");
-            AggiornaListBoxLibri();
         }
 
         private void btn_aggiungiLibro_Click(object sender, RoutedEventArgs e)
         {
             Libro libro = new Libro(txt_autore.Text, txt_titolo.Text, int.Parse(txt_dataPubblicazione.Text), txt_editore.Text, int.Parse(txt_numeroPagine.Text));
             biblioteca.AddLibro(libro);
+            AggiornaListBoxLibri();
         }
         public void AggiornaListBoxLibri()
         {
@@ -50,24 +50,26 @@ namespace BibliotecaScolastica
 
         private void btn_ricerca_Click(object sender, RoutedEventArgs e)
         {
-            if(cbx_ricercaAutore.IsChecked == true)
+            if(cbx_ricercaTitolo.IsChecked == true)
             {
-                biblioteca.ricercaTitolo(txt_ricerca.Text);
+                lbx_informazioni.Items.Add(biblioteca.RicercaLibro(txt_ricerca.Text));
             }
             else
             {
-                biblioteca.ricercaTitolo(txt_ricerca.Text);
+                biblioteca.RicercaLibriConAutore(txt_ricerca.Text);
             }
         }
 
         private void btn_tempoLettura_Click(object sender, RoutedEventArgs e)
         {
-
+            Libro l = lbx_listaLibri.SelectedItem as Libro;
+            string s = l.readingTime();
+            MessageBox.Show(s);
         }
 
         private void btn_numeroLibri_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("" + biblioteca.numeroLibri());
         }
     }
 }
